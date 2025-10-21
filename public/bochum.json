@@ -1,0 +1,31 @@
+{
+  "locations": [
+    {
+      "name": "Oval Office Bar",
+      "description": {
+        "en":  "One of the central hubs of queer life in Bochum, the Oval Office Bar is a feminist / anticapitalist space where you're likely to find people to talk to",
+        "de": "Einer der queeren Treffpunkte Bochums. Die OOB ist ein feministischer / antikapitalistischer Raum in dem du warscheinlich Menschen treffen wirst, mit denen du ins Gespräch kommen kannst"
+      },
+      "location": {
+        "lat": 51.4726077787191,
+        "lng": 7.21736666224125
+      }
+    },
+    {
+      "name": "Cafe Fluid",
+      "description": {
+        "en": "A meetup / event location with strong ties to the trans community, serving all the LGBTQ+ population of the surrounding area",
+        "de": "Ein Treffpunkt und eine Eventlocation. Eng mit der LGBTQ+-Community, und insbesondere der Transcommunity der Region verbunden"
+      },
+      "location": {
+        "lat": 51.48281944458153,
+        "lng": 7.22017369454876
+      }
+    }
+  ],
+  "viewRoot": {
+    "lat": 51.48165,
+    "lng": 7.21648
+  },
+  "label": "bochum"
+}
