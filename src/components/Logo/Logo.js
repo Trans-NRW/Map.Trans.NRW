@@ -1,9 +1,22 @@
-import styles from './Footer.module.scss';
+import styles from './Logo.module.scss';
 
-const Footer = () => {
+const Logo = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.content}>
+    <div className={styles.logoContainer}>
+      <a 
+        href="https://trans.nrw/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className={styles.logo}
+        aria-label="Visit Trans.NRW website"
+      >
+        <img 
+          src="/logo/logo.png" 
+          alt="Trans.NRW Logo" 
+          className={styles.logoImage}
+        />
+      </a>
+      <div className={styles.footerContent}>
         <a 
           href="https://trans.nrw/" 
           target="_blank" 
@@ -22,8 +35,8 @@ const Footer = () => {
           Admin@Trans.NRW
         </a>
       </div>
-    </footer>
+    </div>
   );
 };
 
-export default Footer;
+export default Logo;

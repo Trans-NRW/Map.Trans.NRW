@@ -1,0 +1,64 @@
+.logoContainer {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  display: none;
+  
+  /* Show only on desktop */
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.logo {
+  transition: all 0.3s ease;
+  display: block;
+  margin: 0 0 0.5rem 0;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+  
+  &:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+}
+
+.logoImage {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  display: block;
+}
+
+.footerContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #b8e6fe;
+  font-family: 'Courier New', monospace;
+}
+
+.link {
+  color: #b8e6fe;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: rgba(184, 230, 254, 0.8);
+    text-decoration: underline;
+  }
+  
+  &:focus {
+    outline: 2px solid rgba(184, 230, 254, 0.5);
+    outline-offset: 2px;
+  }
+}
+
+.separator {
+  color: rgba(184, 230, 254, 0.7);
+  font-weight: bold;
+}

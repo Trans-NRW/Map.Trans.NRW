@@ -1,11 +1,21 @@
 .container {
   width: 100%;
   max-width: 1024px;
-  padding: 0 2em;
+  padding: 1rem 2em;
   margin: 0 auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: #27272a;
+  color: white;
 
   @media (max-width: 720px) {
-    padding: 0 1em;
+    padding: 0.5rem 1em;
+  }
+  
+  /* Desktop: make container full width to cover entire area */
+  @media (min-width: 768px) {
+    max-width: none;
+    width: 100%;
   }
 
   h2,

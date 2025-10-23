@@ -1,82 +1,43 @@
-@import "@styles/settings/_settings";
-
 .footer {
-  width: 100%;
-  color: white;
-  background-color: black;
-  padding: 1.2em 0;
-
-  a {
-    color: inherit;
-  }
-
-  p {
-
-    margin: 0 0 .5em;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
+  background: #27272a;
+  color: #b8e6fe;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: 'Courier New', monospace;
+  display: none;
+  
+  /* Show only on mobile */
+  @media (max-width: 767px) {
+    display: block;
   }
 }
 
-.footerContainer {
+.content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-bottom: 0.4em;
-
-  @media (max-width: 720px) {
-    flex-wrap: wrap;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
-.footerLinks {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0 2em;
-
-  @media (max-width: 720px) {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-  }
-
-  li {
-    margin: 0 0.8em;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-
-    svg {
-      margin-right: 0.4em;
-    }
-  }
-}
-
-.footerLegal {
-  a {
+.link {
+  color: #b8e6fe;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: rgba(184, 230, 254, 0.8);
     text-decoration: underline;
   }
+  
+  &:focus {
+    outline: 2px solid rgba(184, 230, 254, 0.5);
+    outline-offset: 2px;
+  }
+}
+
+.separator {
+  color: rgba(184, 230, 254, 0.7);
+  font-weight: bold;
 }

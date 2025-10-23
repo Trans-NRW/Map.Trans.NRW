@@ -25,6 +25,77 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-a.active {
-  border: aquamarine 1px solid;
+.flag {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 0 0.5rem;
+  border-radius: 12px;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  text-decoration: none;
+  min-width: 80px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  background: linear-gradient(90deg, #584458, #9c5f72);
+  color: white;
+  border-color: #9c5f72;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(156, 95, 114, 0.3);
+}
+
+.inactive {
+  background: transparent;
+  color: #9c5f72;
+  border-color: #9c5f72;
+}
+
+.inactive:hover {
+  background: #dc8272;
+  color: white;
+  border-color: #dc8272;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(220, 130, 114, 0.15);
+}
+
+/* Popup content styling for mobile responsiveness */
+.popupContent {
+  max-width: 300px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 0.5rem;
+  font-size: 14px;
+  line-height: 1.4;
+  
+  /* Mobile-specific improvements */
+  @media (max-width: 768px) {
+    max-width: 280px;
+    max-height: 60vh;
+    font-size: 16px;
+    padding: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  /* Ensure scrollbar is visible on mobile */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
 }

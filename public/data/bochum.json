@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-10-23",
+    "cityName": "Bochum",
+    "cityNameLocalized": {
+      "en": "Bochum",
+      "de": "Bochum"
+    },
+    "region": "North Rhine-Westphalia",
+    "regionLocalized": {
+      "en": "North Rhine-Westphalia",
+      "de": "Nordrhein-Westfalen"
+    },
+    "country": "Germany",
+    "countryLocalized": {
+      "en": "Germany",
+      "de": "Deutschland"
+    },
+    "coordinates": {
+      "lat": 51.48165,
+      "lng": 7.21648
+    },
+    "description": {
+      "en": "Trans-friendly locations and queer spaces in Bochum, North Rhine-Westphalia",
+      "de": "Trans-freundliche Orte und queere Räume in Bochum, Nordrhein-Westfalen"
+    },
+    "dataSource": "community-contributed",
+    "maintainer": "Trans.NRW Map-Team",
+    "contact": "Admin@Trans.NRW"
+  },
+  "locations": [
+    {
+      "id": "oval-office-bar",
+      "name": "Oval Office Bar",
+      "description": {
+        "en": "One of the central hubs of queer life in Bochum, the Oval Office Bar is a feminist / anticapitalist space where you're likely to find people to talk to",
+        "de": "Einer der queeren Treffpunkte Bochums. Die OOB ist ein feministischer / antikapitalistischer Raum in dem du warscheinlich Menschen treffen wirst, mit denen du ins Gespräch kommen kannst"
+      },
+      "location": {
+        "lat": 51.4726077787191,
+        "lng": 7.21736666224125,
+        "address": {
+          "street": "Saladin-Schmitt-Straße",
+          "number": "2",
+          "postalCode": "44789"
+        }
+      },
+      "metadata": {
+        "category": "bar",
+        "tags": ["bar", "feminist", "anticapitalist", "queer", "community"],
+        "contact": {
+          "email": "vorstand@kosmopolis.club",
+          "website": "https://kosmopolis.club/"
+        },
+        "accessibility": {
+          "wheelchairAccessible": "unknown",
+          "genderNeutralBathrooms": "unknown",
+          "quietSpace": "unknown"
+        },
+        "verified": true,
+        "lastVerified": "2024-10-23"
+      }
+    },
+    {
+      "id": "cafe-fluid",
+      "name": "Cafe Fluid",
+      "description": {
+        "en": "A meetup / event location with strong ties to the trans community, serving all the LGBTQ+ population of the surrounding area",
+        "de": "Ein Treffpunkt und eine Eventlocation. Eng mit der LGBTQ+-Community, und insbesondere der Transcommunity der Region verbunden"
+      },
+      "location": {
+        "lat": 51.48281944458153,
+        "lng": 7.22017369454876,
+        "address": {
+          "street": "Große Beckstraße",
+          "number": "12",
+          "postalCode": "44787"
+        }
+      },
+      "metadata": {
+        "category": "cafe",
+        "tags": ["cafe", "events", "trans", "lgbtq", "community", "meetup"],
+        "contact": {
+          "phone": "0234/51919",
+          "email": "fluid@bochum.aidshilfe.de",
+          "website": "https://www.instagram.com/fluid_bo"
+        },
+        "accessibility": {
+          "wheelchairAccessible": "unknown",
+          "genderNeutralBathrooms": "unknown",
+          "quietSpace": "unknown"
+        },
+        "verified": true,
+        "lastVerified": "2024-10-23"
+      }
+    }
+  ],
+  "viewRoot": {
+    "lat": 51.48165,
+    "lng": 7.21648,
+    "zoom": 13
+  },
+  "label": "bochum"
+}
