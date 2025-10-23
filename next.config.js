@@ -5,6 +5,11 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  },
   webpack: (config) => {
     config.plugins.push(
       new CopyPlugin({
