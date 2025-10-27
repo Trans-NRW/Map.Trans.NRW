@@ -26,16 +26,13 @@ jobs:
     - name: Build Next.js application
       run: yarn build
         
-    - name: Deploy to remote host via FTPS
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: Deploy to VServer via SSH
+      uses: burnett01/rsync-deployments@7.1.0
       with:
-        server: ${{ secrets.SFTP_HOST }}
-        username: ${{ secrets.SFTP_USERNAME }}
-        password: ${{ secrets.SFTP_PASSWORD }}
-        local-dir: ./out/
-        server-dir: /
-        protocol: ftps
-        timeout: 60000
-        retry-attempts: 3
-        retry-delay: 10000
-        log-level: verbose
+        switches: -avz --delete --rsync-path="rsync" --exclude='.git' --exclude='.github'
+        path: "./out/"
+        remote_path: "/var/www/map.trans.nrw/html/"
+        remote_host: ${{ secrets.SERVER_IP }}
+        remote_user: ${{ secrets.SERVER_USER }}
+        remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        remote_port: 2222
